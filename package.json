@@ -1,0 +1,10 @@
+{
+  "name" : "GibberOn",
+  "version" : "0.0.1",
+  "description" : "Nodejs Socket.io chat",
+  "dependencies" : {
+    "socket.io" : "latest",
+    "express" : "latest"
+  },
+  "author" : "github.com/deepakvenkat"
+}
