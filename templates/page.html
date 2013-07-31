@@ -2,6 +2,9 @@
 <html>
 <head>
   <title></title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="/chat.js"></script>
+  <script type="text/javascript" src="socket.io/socket.io.js"></script>
 </head>
 <style type="text/css">
   #content{
@@ -12,10 +15,12 @@
     overflow-y: scroll;
   }
 </style>
-<body id= "content">
+<body>
+  <div id="content"></div>
   <div class="controls">
-    <input type="text" style="width:350px;">
-    <input type="button" send="send" value="Send">
+    Name: <input type="text" id="name" style="width:350px;"> <br>
+    <input type="text" style="width:350px;" id ="field">
+    <input type="button" id="send" value="Send">
   </div>
 </body>
 </html>
