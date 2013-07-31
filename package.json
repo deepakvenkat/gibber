@@ -4,7 +4,8 @@
   "description" : "Nodejs Socket.io chat",
   "dependencies" : {
     "socket.io" : "latest",
-    "express" : "latest"
+    "express" : "latest",
+    "jade" : "latest"
   },
   "author" : "github.com/deepakvenkat"
 }
