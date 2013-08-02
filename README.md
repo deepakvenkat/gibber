@@ -1,7 +1,9 @@
 gibber
 ======
 
-nodejs + io.sockets 
-clone the package and run npm install
-start the app by running node index.js
+##nodejs + io.sockets
+
+*clone the package and run `npm install`
+*run `gem install foreman`
+*start the app by running `foreman start`
 
