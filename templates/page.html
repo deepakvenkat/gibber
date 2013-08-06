@@ -3,7 +3,9 @@
 <head>
   <title></title>
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script type="text/javascript" src="/chat.js"></script>
+  <script type="text/javascript" src="/js/chat.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
   <script type="text/javascript" src="socket.io/socket.io.js"></script>
 </head>
 <style type="text/css">
@@ -14,13 +16,33 @@
     border: solid 1px #999;
     overflow-y: scroll;
   }
+  .controls{
+    width: 500px;
+  }
 </style>
 <body>
-  <div id="content"></div>
-  <div class="controls">
-    Name: <input type="text" id="name" style="width:350px;"> <br>
-    <input type="text" style="width:350px;" id ="field">
-    <input type="button" id="send" value="Send">
+  <div class="container">
+    <div class="header">
+      <h3 class="text-muted">Gibber On!</h3>
+    </div>
+    <div id="content"></div>
+    <div class="controls">
+      <div class="input-group">
+        <span class="input-group-addon">Name</span>
+        <input type="text" id="name" class="form-control">
+      </div>
+      <br>
+      <div>
+        <div class="input-group">
+          <input type="text" class="form-control" id="field" placeholder="Message">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" id="send"> Send
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
   </div>
+
 </body>
 </html>
